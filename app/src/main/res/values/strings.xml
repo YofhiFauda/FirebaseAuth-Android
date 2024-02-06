@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">firebaseauth-android</string>
+
+    <string name="login">Login</string>
+    <string name="title_login">Welcome back!</string>
+    <string name="subtitle_login">Login to your exiting account</string>
+    <string name="helper_login">Don\'t have an account?</string>
+    <string name="signIn">Sign In</string>
+
+    <string name="signUp">Sign Up</string>
+    <string name="title_register">Let\'s Get Started</string>
+    <string name="subtitle_register">Create an account</string>
+    <string name="helper_signUp">Already have an account?</string>
+
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <string name="or_divider">or</string>
+
+
+
 </resources>
