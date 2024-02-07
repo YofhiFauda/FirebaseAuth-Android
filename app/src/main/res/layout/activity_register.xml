@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ui.RegisterActivity">
+    tools:context=".ui.register.RegisterActivity">
 
     <!--  Start of Image  -->
     <ImageView
@@ -66,23 +66,22 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
         android:textSize="14sp"
-        app:helperTextEnabled="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_subtitleRegister"
         app:layout_constraintBottom_toTopOf="@+id/emailEditTextLayout">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <com.example.firebaseauth_android.custom.CustomUsername
             android:id="@+id/ed_regiter_username"
             android:hint="@string/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_medium"
-            android:drawableStart="@drawable/ic_baseline_email_24"
             android:drawablePadding="15dp"
+            android:drawableStart="@drawable/ic_baseline_person_24"
             android:autofillHints="name"
             android:minHeight="50dp"
             android:textSize="14sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
             tools:ignore="SpeakableTextPresentCheck" />
@@ -104,12 +103,12 @@
         app:layout_constraintTop_toBottomOf="@+id/usernameEditTextLayout"
         app:layout_constraintBottom_toTopOf="@+id/passwordEditTextLayout">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <com.example.firebaseauth_android.custom.CustomEmail
             android:id="@+id/ed_register_email"
             android:hint="@string/email"
             android:fontFamily="@font/poppins_medium"
-            android:drawableStart="@drawable/ic_baseline_email_24"
             android:drawablePadding="15dp"
+            android:drawableStart="@drawable/ic_baseline_email_24"
             android:textSize="14sp"
             android:autofillHints="emailAddress"
             android:minHeight="50dp"
@@ -139,9 +138,9 @@
             android:id="@+id/ed_register_password"
             android:hint="@string/password"
             android:fontFamily="@font/poppins_medium"
-            android:drawableStart="@drawable/ic_baseline_lock_24"
             android:drawablePadding="10dp"
-            android:autofillHints="emailAddress"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:autofillHints="password"
             android:minHeight="50dp"
             android:textSize="14sp"
             android:layout_width="match_parent"
