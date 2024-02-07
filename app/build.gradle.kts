@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.firebaseauth_android"
-        minSdk = 21
+        minSdk = 29
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -37,6 +37,12 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    packaging {
+        resources {
+            excludes.add("META-INF/AL2.0")
+            excludes.add("META-INF/LGPL2.1")
+        }
+    }
 }
 
 dependencies {
@@ -49,6 +55,7 @@ dependencies {
     //Firebase
     implementation("com.google.firebase:firebase-auth:22.3.1")
     implementation("com.google.android.gms:play-services-auth:20.7.0")
+    implementation("com.google.gms:google-services:4.4.0")
 
     //lifecycle
     implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")

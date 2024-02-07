@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">firebaseauth-android</string>
 
     <string name="login">Login</string>
@@ -18,6 +18,12 @@
     <string name="confirm_password">Confirm Password</string>
 
     <string name="or_divider">or</string>
+
+    <string name="sign_out">Sign Out</string>
+
+    <string name="welcome_dashnoard">Welcome to Firebase Auth</string>
+
+    <string name="default_web_client_id" tools:ignore="TypographyDashes">480263474179-6np7enjs94dmpno3aguev2669f1q2she.apps.googleusercontent.com</string>
 
     <string name="invalid_email">Format email is invalid!</string>
     <string name="min_length_char">Minimal Length %1$d characters</string>

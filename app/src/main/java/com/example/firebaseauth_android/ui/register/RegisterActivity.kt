@@ -10,7 +10,7 @@ import android.view.WindowManager
 import android.widget.Toast
 import com.example.firebaseauth_android.databinding.ActivityRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
-import com.example.firebaseauth_android.ui.LoginActivity
+import com.example.firebaseauth_android.ui.login.LoginActivity
 import com.example.firebaseauth_android.R
 
 
@@ -57,7 +57,8 @@ class RegisterActivity : AppCompatActivity() {
                                 AlertDialog.Builder(this@RegisterActivity).apply {
                                     setTitle("Congratulations")
                                     setMessage("Your account successfully created!")
-                                    setPositiveButton("Next") { _, _ ->
+                                    setPositiveButton("Next") { dialog, _ ->
+                                        startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
                                         finish()
                                     }
                                     create()
@@ -80,7 +81,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun setupAction() {
-        binding.tvHelperRegister.setOnClickListener{
+        binding.tvSignIn.setOnClickListener{
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }

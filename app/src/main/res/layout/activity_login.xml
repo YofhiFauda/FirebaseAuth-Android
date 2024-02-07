@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ui.LoginActivity">
+    tools:context=".ui.login.LoginActivity">
 
 
     <!--  Start of Image  -->
@@ -73,7 +73,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_subtitleLogin"
         app:layout_constraintBottom_toTopOf="@+id/passwordEditTextLayout">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <com.example.firebaseauth_android.custom.CustomEmail
             android:id="@+id/ed_login_email"
             android:hint="@string/email"
             android:fontFamily="@font/poppins_medium"
@@ -104,7 +104,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailEditTextLayout">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <com.example.firebaseauth_android.custom.CustomPassword
             android:id="@+id/ed_login_password"
             android:hint="@string/password"
             android:fontFamily="@font/poppins_medium"
