@@ -1,4 +1,4 @@
-# ** Android Firebase Auth** 
+# ** Android Firebase Auth ** 
 
 I made this repo as a reference material for learning to use Firebase Auth on the Android platform so that it can help friends. Hopefully it will be useful..<br>
 
